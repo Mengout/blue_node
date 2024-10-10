@@ -24,6 +24,13 @@ app.route('/h').get(function(req,res){
 });
 
 
+app.route('/').get(function(req,res){
+  
+  res.send('Welcome to blue');
+});
+
+
+
 server.listen(3000, () => {
   console.log('server running at http://localhost:3000');
 });
